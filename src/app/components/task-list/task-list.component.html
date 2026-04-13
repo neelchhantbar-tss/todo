@@ -1,0 +1,9 @@
+<h2>{{ title }}</h2>
+<div class="box">
+  <app-task-item
+    *ngFor="let task of tasks"
+    [task]="task"
+    (remove)="onRemoveTask($event)"
+    (complete)="onCompleteTask($event)"
+  ></app-task-item>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>ToDo App</h1>
+
+  <app-task-input (addTask)="addTask($event)"></app-task-input>
+
+  <app-task-list
+    title="Total Task"
+    [tasks]="totalTasks"
+    [showCompleteButton]="true"
+    (removeTask)="removeTask($event)"
+    (completeTask)="completeTask($event)"
+  ></app-task-list>
+
+  <app-task-list
+    title="Completed Task"
+    [tasks]="completedTasks"
+    (removeTask)="removeTask($event)"
+  ></app-task-list>
+</div>
