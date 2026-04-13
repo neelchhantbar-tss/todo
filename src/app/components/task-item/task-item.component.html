@@ -1,0 +1,9 @@
+<div class="task">
+  <span *ngIf="!task.completed">{{ task.text }}</span>
+  <strike *ngIf="task.completed">{{ task.text }}</strike>
+
+  <div class="actions">
+    <button class="remove-btn" (click)="onRemove()">Remove</button>
+    <button class="complete-btn" *ngIf="!task.completed" (click)="onComplete()">Complete</button>
+  </div>
+</div>
