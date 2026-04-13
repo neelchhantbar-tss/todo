@@ -72,7 +72,6 @@ button {
   display: flex;
   gap: 8px;
 }
-
 .completed-text {
   text-decoration: line-through;
 }
