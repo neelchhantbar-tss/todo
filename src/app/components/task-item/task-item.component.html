@@ -1,6 +1,6 @@
 <div class="task">
-  <span *ngIf="!task.completed">{{ task.text }}</span>
-  <strike *ngIf="task.completed">{{ task.text }}</strike>
+  <span [class.completed-text]="task.completed">{{ task.text }}</span>
+
 
   <div class="actions">
     <button class="remove-btn" (click)="onRemove()">Remove</button>
